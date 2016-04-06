@@ -21,6 +21,15 @@ using System.IO;
 public class ItemManager : MonoBehaviour {
     private List<Item> _item_database = new List<Item>();
     private JSONNode _item_data;
+    public static ItemManager instance;
+
+    void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+    }
 
     /*
      * Reads data from a JSON file and creates the item list.

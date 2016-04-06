@@ -91,7 +91,7 @@ public class Inventory : MonoBehaviour
         //AddItem(1);
         //AddItem(2);
         //AddItem(2, 200);
-        //AddItem(3, 10);
+        //AddItem(3, 10);   
         //AddItem(0);
 
         //AddItem(1);
